@@ -765,6 +765,7 @@ int main(int argc, char *argv[])
 
   for(;;)
   {
+    time_t t;
     txoff();
     centre_freq = atof(argv[band + 4]);
     band++;
@@ -772,6 +773,10 @@ int main(int argc, char *argv[])
       band = 0;
     if(centre_freq) setupDMATab(centre_freq, WSPR_OFFSET, WSPR_SYMTIME, 4);
     wait_even_minute();
+    time(&t);
+    printf("%s ", ctime(&t));
+     
+
     printf("%f\n", centre_freq);
     if(centre_freq){
       txon();
