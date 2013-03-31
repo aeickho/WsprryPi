@@ -134,7 +134,8 @@ Reference documentation:
 #include <malloc.h>
 #include <time.h>
 
-#define F_XTAL       (19229581.050215044276577479844352)             // calibrated 19.2MHz XTAL frequency 
+#define F_XTAL (19231696)   // my F_XTAL
+ 
 #define F_PLLD_CLK   (26.0 * F_XTAL)                                 // 500MHz PLLD reference clock 
 
 #define N_ITER  1400  // number of PWM operations per symbol; larger values gives less spurs at the cost of frequency resolution; e.g. use 22500 for HF usage up to 30MHz, 12000 up to 50MHz, 1600 for VHF usage up to 144 Mhz, F_PWM_CLK needs to be adjusted when changing N_ITER 
