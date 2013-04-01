@@ -630,7 +630,6 @@ int main(int argc, char *argv[])
   double wspr_symtime;
   int nbands = argc - 4;
   int band = 0;
-  time_t t;
 
   if(argc < 5){
     printf("Usage: wspr <[prefix/]callsign[/A-Z,/0-9,/00-99]> <locator> <power in dBm> [<frequency in Hz or 0 for interval> ...]\n");
