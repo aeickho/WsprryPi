@@ -308,7 +308,6 @@ void setfreq(long freq)
 void txSym(int sym, double tsym)
 {
     int bufPtr=0;
-    short data;
     int clocksPerIter = (int)((F_PWM_CLK/((double)N_ITER)) * tsym);
     //printf("tsym=%f iter=%u clocksPerIter=%u tsymerr=%f\n", tsym, N_ITER, clocksPerIter, tsym - ((float)clocksPerIter*(float)N_ITER)/F_PWM_CLK );
     int i = sym*3 + 511;
