@@ -1,5 +1,4 @@
 /*
-
  Raspberry Pi bareback LF/MF/HF/VHF WSPR transmitter  <pe1nnz@amsat.org>
 
  Makes a very simple WSPR beacon from your RasberryPi by connecting GPIO 
